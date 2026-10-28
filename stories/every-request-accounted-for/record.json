@@ -1,0 +1,44 @@
+{
+ "url": "https://coreyjames.ai/stories/every-request-accounted-for/",
+ "kind": "story",
+ "title": "Every request accounted for",
+ "subtitle": "The tool-discovery model's fleet daemon has a nine-point service contract: 512 requests offered to 64 clients with a queue of sixteen gave 244 answered, 268 refused with a typed reason and none dropped, and a shutdown that answered every request in flight",
+ "systems": [
+  "capabilities-model"
+ ],
+ "technologies": [
+  "Rust",
+  "CUDA C++",
+  "Capacity engineering, backpressure and load testing",
+  "Unix domain sockets",
+  "Model Context Protocol (MCP)"
+ ],
+ "stats": [
+  {
+   "value": "244",
+   "label": "answered, of 512 requests offered by 64 clients to a queue of sixteen"
+  },
+  {
+   "value": "268",
+   "label": "refused with a typed busy reason"
+  },
+  {
+   "value": "8 of 8",
+   "label": "requests in flight answered when the daemon was terminated"
+  }
+ ],
+ "lede": "The tool-discovery model answers one question, which tool does this request need, for every agent in my estate, and it does so from a GPU it shares with a larger serving model. A router beside a production model tells how it fits in the memory it is allowed. This is how it serves: a daemon whose contract says what happens to every request it is offered, including the ones it refuses. The serial daemon runs one thread per connection over a Unix socket and holds the engine behind a single mutex. Decode is batch-one there, so the mutex is the queue and nothing more is needed.",
+ "quote": "A refusal before bind means no client ever saw a half-ready service.",
+ "evidence": [
+  "Service contracts for inference daemons: a nine-point contract under which 512 requests offered by 64 clients to a queue of sixteen gave 244 answered and 268 refused with a typed reason.",
+  "Backpressure and load shedding: a bounded queue in which every refusal carries a typed busy reason and no request is dropped.",
+  "Graceful shutdown: 8 of 8 requests in flight answered when the daemon was terminated.",
+  "Continuous batching: one engine thread stepping rows from every sequence in flight, each in its own paged cache, so a short answer never waits for a long one.",
+  "MCP server design: the daemon reachable as a standard tool-protocol server over standard input and over streamable HTTP with TLS."
+ ],
+ "problem": "small-models",
+ "canonical": "https://coreyjames.ai/stories/every-request-accounted-for/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/every-request-accounted-for"
+}

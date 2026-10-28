@@ -1,0 +1,42 @@
+{
+ "url": "https://coreyjames.ai/stories/bit-identical-across-batch-compositions/",
+ "kind": "story",
+ "title": "Bit-identical across batch compositions",
+ "subtitle": "Designing nondeterminism out of a GPU decoder so an agent's choice of tool never depends on its neighbours",
+ "systems": [
+  "capabilities-model"
+ ],
+ "technologies": [
+  "CUDA",
+  "Rust",
+  "Numerical reproducibility",
+  "GPU kernel design"
+ ],
+ "stats": [
+  {
+   "value": "12 of 12",
+   "label": "bit-identity gates across batch compositions"
+  },
+  {
+   "value": "2,345",
+   "label": "of 2,345 shuffled compositions agree on the top result"
+  },
+  {
+   "value": "484",
+   "label": "of 484 ranked lists match an independent implementation"
+  }
+ ],
+ "lede": "Under continuous batching, the same request can return a different answer depending on what else is in the batch. For most workloads that is noise. For a model whose job is to tell an agent which tool to call, it is a correctness bug: the ranking must not depend on strangers. I set a gate that top results must be stable across batch compositions, then went further and built the decoder so that its output bits are identical whatever else is in the batch. GPU reductions are fast because they are parallel, and parallel floating-point sums are order-dependent. Different batch sizes choose different tiling, different tiling changes summation order, and the last bits of a logit shift.",
+ "quote": "A faster decoder that sometimes picks a different tool is slower at the job.",
+ "evidence": [
+  "Deterministic GPU computation: a CUDA decoder whose output bits are identical whatever else is in the batch, passing 12 of 12 bit-identity gates.",
+  "CUDA kernel development: one block per output row and fixed-order reductions, a 32-lane shuffle tree under a 256-thread tree, with no K-split tiling.",
+  "Numerical reproducibility and bitwise validation: 2,345 of 2,345 shuffled compositions agree on the top result, and 484 of 484 ranked lists match an independent implementation.",
+  "Inference correctness under continuous batching: serial and batched engines share one set of row kernels, held by a header invariant so the two cannot drift apart."
+ ],
+ "problem": "proof",
+ "canonical": "https://coreyjames.ai/stories/bit-identical-across-batch-compositions/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/bit-identical-across-batch-compositions"
+}

@@ -1,0 +1,42 @@
+{
+ "url": "https://coreyjames.ai/stories/trying-the-industrial-path-first/",
+ "kind": "story",
+ "title": "Trying the industrial path first",
+ "subtitle": "Evaluating the standard vendor serving stack for a custom decoder, and closing that path on measurements",
+ "systems": [
+  "capabilities-model"
+ ],
+ "technologies": [
+  "TensorRT-LLM",
+  "Grammar-constrained decoding",
+  "CUDA",
+  "NVIDIA Blackwell GPUs"
+ ],
+ "stats": [
+  {
+   "value": "4",
+   "label": "checks on the vendor path, any one of which could have kept it"
+  },
+  {
+   "value": "3",
+   "label": "guarantees any engine had to keep: identical answers, no repeats, catalog names only"
+  },
+  {
+   "value": "1,000×",
+   "label": "weight corruption on some tensors after the vendor conversion"
+  }
+ ],
+ "lede": "When the tool-discovery model needed to serve two thousand concurrent clients, the obvious answer was the vendor's industrial serving stack. I directed that it be tried first, before any custom engine was justified. It was traced to its extension point in source, probed against my decoding constraints, and measured in the vendor's own container. It did not fit, for three reasons I could show, and the custom engine was kept. Building a custom GPU decoder is expensive and easy to justify badly. Identical answers, so switching engines could not change what an agent was told. The decoding constraints are what make the model safe to use. And a shared GPU: the stack had to fit beside the 30B model.",
+ "quote": "If a standard stack would serve the model at the required concurrency with the required guarantees, the custom engine was the wrong choice however satisfying it was to build.",
+ "evidence": [
+  "Vendor stack evaluation: the vendor's industrial serving stack traced to its extension point in source, probed with the real constraint and measured in its own container before a custom engine was kept.",
+  "TensorRT and TensorRT-LLM engineering: a conversion verdict that found weight corruption of 1,000 times on some tensors after the vendor conversion.",
+  "Grammar-constrained decoding: probes of the stack's guided-decoding extension point showing the no-repeat constraint could not be enforced soundly.",
+  "GPU performance benchmarking: a throughput ceiling study in the vendor's container, 492 requests a second with the card to itself against 56 beside the 30B model."
+ ],
+ "problem": "proof",
+ "canonical": "https://coreyjames.ai/stories/trying-the-industrial-path-first/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/trying-the-industrial-path-first"
+}

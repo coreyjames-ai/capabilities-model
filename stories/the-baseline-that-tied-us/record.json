@@ -1,0 +1,45 @@
+{
+ "url": "https://coreyjames.ai/stories/the-baseline-that-tied-us/",
+ "kind": "story",
+ "title": "The baseline that tied us",
+ "subtitle": "Retiring a flattering benchmark, building the strongest retriever I could, and publishing the result that hurt",
+ "systems": [
+  "capabilities-model"
+ ],
+ "technologies": [
+  "Evaluation harness design",
+  "BM25",
+  "Embedding models",
+  "ONNX Runtime",
+  "Rust",
+  "Pre-registered experiments"
+ ],
+ "stats": [
+  {
+   "value": "17",
+   "label": "points of recall the first headline claimed, struck before publication"
+  },
+  {
+   "value": "469",
+   "label": "held-out queries, frozen before any model result was reported"
+  },
+  {
+   "value": "5",
+   "label": "embedding models in the bake-off for the baseline"
+  }
+ ],
+ "lede": "My tool-discovery model had a headline: a large lead in recall over classical retrieval. The results were about to be written up and every incentive pointed at believing the number. I struck it. The comparison was against a weak baseline, and a weak baseline makes any model look good. I replaced it with the strongest classical retriever I could assemble. That retriever tied the model at the cutoffs that matter and beat it on long, buried requests. The tie is the number I publish. The first comparison for the capabilities model was against an external small tool-calling model whose results carried no information: anything would have won.",
+ "quote": "A result I would not accept from someone else is a result I cannot publish.",
+ "evidence": [
+  "ML evaluation methodology: a 469-query held-out set frozen before any model result was reported, plus fifteen long, buried requests.",
+  "Benchmark integrity: a 17-point recall headline struck before publication because its baseline had ranked two thousand entries against the model's forty-two.",
+  "Hybrid retrieval baselines: a dense-plus-BM25 fusion retriever with every weight and cutoff chosen by sweep, which tied the model and beat it on buried requests.",
+  "Embedding model selection: a bake-off of 5 embedding models that replaced an incumbent chosen by habit.",
+  "Known-answer controls in experiment harnesses: a control that failed once stopped the whole matrix until a numerical precision setting was pinned and every ranker re-run."
+ ],
+ "problem": "proof",
+ "canonical": "https://coreyjames.ai/stories/the-baseline-that-tied-us/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/the-baseline-that-tied-us"
+}

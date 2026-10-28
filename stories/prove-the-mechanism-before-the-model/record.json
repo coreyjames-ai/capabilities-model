@@ -1,0 +1,42 @@
+{
+ "url": "https://coreyjames.ai/stories/prove-the-mechanism-before-the-model/",
+ "kind": "story",
+ "title": "Prove the mechanism before the model",
+ "subtitle": "Three load-bearing ideas behind the custom decoder, a device-side graph loop, a persisting L2 window and a constant-memory trie mask, were each proved on the real GPU in a small lab before the model existed, and one of them contradicted the documentation",
+ "systems": [
+  "capabilities-model"
+ ],
+ "technologies": [
+  "CUDA C++",
+  "CUDA Driver API",
+  "Performance engineering and benchmarking",
+  "GPU numerical kernel design"
+ ],
+ "stats": [
+  {
+   "value": "4.304 µs",
+   "label": "saved per token per kernel by looping on the device"
+  },
+  {
+   "value": "60 MiB",
+   "label": "of the 96 MiB L2, the set-aside ceiling measured on the card"
+  },
+  {
+   "value": "0.016 µs",
+   "label": "to consult the constant-memory mask at a 131,072-token vocabulary"
+  }
+ ],
+ "lede": "The custom decoder for the tool-discovery model, told in Constraint made cheaper than no constraint, rests on three mechanisms that the whole design assumes will work: a decode loop that runs on the device under a graph whose continuation predicate the GPU itself writes, a window of L2 cache set aside so the model's weights stay resident between tokens, and a trie-shaped grammar mask served from constant memory. If any of the three had not worked on the generation of GPU I had, the decoder would have been built on sand. So before the model was trained, each was built and measured on its own, on the real card, with a toy body.",
+ "quote": "The decoder was then built on three numbers rather than three hopes.",
+ "evidence": [
+  "Hardware-first prototyping: three decoder mechanisms each proved on the real GPU in a small lab with a toy body before the model was trained.",
+  "CUDA graphs and device-side control flow: a decode loop under a graph with a conditional node, 4.304 µs saved per token per kernel.",
+  "GPU cache tuning: an L2 persisting window whose set-aside ceiling measured 60 MiB of the 96 MiB L2, against what the documentation suggests.",
+  "Constant-memory kernel design: a grammar mask consulted in 0.016 µs at a 131,072-token vocabulary."
+ ],
+ "problem": "gpu-economics",
+ "canonical": "https://coreyjames.ai/stories/prove-the-mechanism-before-the-model/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/prove-the-mechanism-before-the-model"
+}

@@ -1,0 +1,44 @@
+{
+ "url": "https://coreyjames.ai/stories/a-router-beside-a-production-model/",
+ "kind": "story",
+ "title": "A router beside a production model",
+ "subtitle": "Serving two thousand concurrent agents from a 0.6B model in the memory left over on a shared GPU, and reporting the target I missed",
+ "systems": [
+  "capabilities-model"
+ ],
+ "technologies": [
+  "CUDA",
+  "Rust",
+  "Unix-socket wire protocols",
+  "Model Context Protocol (MCP)",
+  "Admission control",
+  "NVIDIA Blackwell GPUs"
+ ],
+ "stats": [
+  {
+   "value": "2.7 GiB",
+   "label": "the engine's whole footprint beside a 30B model"
+  },
+  {
+   "value": "85.9/s",
+   "label": "requests served during the largest burst"
+  },
+  {
+   "value": "0",
+   "label": "answers failed, rejected or contaminated in that burst"
+  }
+ ],
+ "lede": "The tool-discovery model had to live on a GPU whose memory belonged to a 30-billion-parameter serving model. I set two thousand concurrent clients as an acceptance requirement, and built an engine that admits work against measured memory and refuses with a number when it cannot. The sustained throughput target I had pre-registered for mixed traffic was missed by a wide margin, for a reason I can name, and that miss is on this page. A discovery model that agents call before most actions will be called by many agents at once. If it falls over under load, every agent stalls at the same moment.",
+ "quote": "The miss is structural, and saying so is more useful to the next design than a better-looking number.",
+ "evidence": [
+  "Inference serving architecture: a batched continuous-decode engine with paged key-value memory, 2.7 GiB in total beside a 30B model on one shared GPU.",
+  "Admission control under memory pressure: requests admitted against measured free memory and refused as a typed busy response with a number when they do not fit.",
+  "Load testing methodology: a ladder from one to 2,048 clients with abort conditions, 85.9 requests a second in the largest burst and 0 answers failed, rejected or contaminated.",
+  "Capacity reporting: a pre-registered sustained throughput target for mixed traffic reported as missed, with its cause, instead of a friendlier accounting of about 14 requests a second."
+ ],
+ "problem": "small-models",
+ "canonical": "https://coreyjames.ai/stories/a-router-beside-a-production-model/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/a-router-beside-a-production-model"
+}

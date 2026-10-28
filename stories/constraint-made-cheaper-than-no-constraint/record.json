@@ -1,0 +1,44 @@
+{
+ "url": "https://coreyjames.ai/stories/constraint-made-cheaper-than-no-constraint/",
+ "kind": "story",
+ "title": "Constraint made cheaper than no constraint",
+ "subtitle": "A grammar-bounded CUDA decoder in which enforcing the tool catalog costs less than not enforcing it",
+ "systems": [
+  "capabilities-model"
+ ],
+ "technologies": [
+  "CUDA C++",
+  "Grammar-constrained decoding",
+  "GPU inference engine engineering",
+  "Rust",
+  "NVIDIA Blackwell GPUs",
+  "Determinism and numerical reproducibility"
+ ],
+ "stats": [
+  {
+   "value": "172 µs",
+   "label": "less per token with the catalog enforced than with no constraint at all"
+  },
+  {
+   "value": "607",
+   "label": "trie nodes for 42 tools, held in 64 KiB of constant memory"
+  },
+  {
+   "value": "12 of 12",
+   "label": "bit-identity gates; identical top results across 2,345 shuffled batches"
+  }
+ ],
+ "lede": "Constrained decoding is usually a tax. A serving framework computes every logit, then masks the ones the grammar forbids, then samples. My tool-discovery decoder turns that around. The grammar knows, before a token's forward pass finishes, that the answer is one of the current node's outgoing edges, so the output layer only computes those. Around that idea is a decoder I built from the ground up in CUDA: a trie in constant memory, a device-resident decode loop, a batched engine with paged memory, and determinism by construction.",
+ "quote": "Nothing is kept until it moves the 469-query wall clock.",
+ "evidence": [
+  "Grammar-constrained decoding: a CUDA decoder whose output layer computes only the edges the trie permits, 172 µs less per token with the catalog enforced than with no constraint.",
+  "CUDA kernel development: a token trie of 607 nodes for 42 tools held in 64 KiB of constant memory, with masked sampling in one block of 256 threads.",
+  "Deterministic GPU computation: 12 of 12 bit-identity gates and identical top results across 2,345 shuffled batches.",
+  "Fail-loud inference design: a decoder that stops with an error when the mask leaves nothing, so a broken grammar never produces a plausible answer."
+ ],
+ "problem": "small-models",
+ "canonical": "https://coreyjames.ai/stories/constraint-made-cheaper-than-no-constraint/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/constraint-made-cheaper-than-no-constraint"
+}

@@ -1,0 +1,42 @@
+{
+ "url": "https://coreyjames.ai/stories/reading-a-file-format-by-correlation/",
+ "kind": "story",
+ "title": "Reading a file format by correlation",
+ "subtitle": "The four-bit weight format's layout was established by correlating candidate decodings against the known weights before a kernel was written, 0.9955 against 0.0018, and four-bit was positioned as a footprint win rather than a speed win",
+ "systems": [
+  "capabilities-model"
+ ],
+ "technologies": [
+  "CUDA C++",
+  "Model quantization",
+  "Determinism and numerical reproducibility",
+  "ML evaluation methodology"
+ ],
+ "stats": [
+  {
+   "value": "256",
+   "label": "byte patterns, every one, on which the hardware and table eight-bit paths agree"
+  },
+  {
+   "value": "2, 4, 8",
+   "label": "rows per block in the tiled kernels, each bit-identical to the untiled form"
+  },
+  {
+   "value": "2.53×",
+   "label": "denser in memory with four-bit weights, and no faster"
+  }
+ ],
+ "lede": "The tool-discovery model ships in several precisions, and the smallest is a four-bit floating-point format with a block scale: a nibble per weight holding a two-bit exponent and a one-bit mantissa, and an eight-bit scale per block of weights. The format's documentation describes the arithmetic. It does not pin down, byte by byte, which nibble is which weight and how the block scales are laid out against them, and a kernel written against the wrong layout decodes plausible nonsense. I had the same weights in a known precision. So before any kernel was written, each candidate interpretation of the layout was decoded on the host and correlated against the known weights.",
+ "quote": "The four-bit build is the footprint build, the eight-bit build is the serving build.",
+ "evidence": [
+  "Reverse engineering of binary formats: a four-bit weight layout established by correlating candidate decodings with known weights, 0.9955 against 0.0018, before a kernel was written.",
+  "Low-precision kernel development: four-bit kernels decoding through constant-memory lookup tables, and eight-bit hardware and table paths shown to agree on all 256 byte patterns.",
+  "LLM quantization trade-offs: four-bit weights positioned as a footprint win, 2.53 times denser in memory and no faster.",
+  "Kernel equivalence testing: register-tiled row kernels at 2, 4 and 8 rows per block, each bit-identical to the untiled form."
+ ],
+ "problem": "gpu-economics",
+ "canonical": "https://coreyjames.ai/stories/reading-a-file-format-by-correlation/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/reading-a-file-format-by-correlation"
+}

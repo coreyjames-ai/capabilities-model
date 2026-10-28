@@ -1,0 +1,46 @@
+{
+ "url": "https://coreyjames.ai/stories/a-27b-model-on-one-32gb-intel-card/",
+ "kind": "story",
+ "title": "A 27B model on one 32 GB Intel card",
+ "subtitle": "A measured, attributed and published 4-bit quantization of a 27-billion-parameter hybrid recurrent-attention open-weight model for an Intel Arc Pro GPU",
+ "systems": [
+  "capabilities-model",
+  "activekv"
+ ],
+ "technologies": [
+  "Weight quantisation (W4A16)",
+  "compressed-tensors",
+  "Intel XPU vLLM",
+  "PyTorch XPU",
+  "Intel Arc GPUs",
+  "Hugging Face Hub",
+  "Hybrid recurrent-attention 27B-class models"
+ ],
+ "stats": [
+  {
+   "value": "+36%",
+   "label": "sustained output throughput over the mixed 4-bit and 8-bit control, 64 clients"
+  },
+  {
+   "value": "3.33%",
+   "label": "higher perplexity than full precision on an 8-document diagnostic set"
+  },
+  {
+   "value": "1,798",
+   "label": "tokens per second total at 32 clients, 1,536-token prompts, prefix caching on"
+  }
+ ],
+ "lede": "The base model, a 27-billion-parameter hybrid recurrent-attention open-weight model, does not fit in BF16 on a 32 GB Intel Arc Pro GPU, and I needed it to, with room left for context and concurrency. I built a 4-bit-weight quantization that fits it, ran a four-arm experiment to attribute exactly where the speed came from, and published the model with its card on Hugging Face. The model card states the trade-off in plain numbers. Fitting a large model on a smaller card is routine on NVIDIA hardware with mature tooling. On a new Intel architecture, with a stock XPU build of vLLM and no forked kernels, it was not.",
+ "quote": "I took the throughput and stated the cost.",
+ "evidence": [
+  "LLM quantization (4-bit): a weight-only W4A16 recipe for a 27-billion-parameter hybrid model, rounded from hash-checked weights with no calibration data, at 3.33% higher perplexity than full precision.",
+  "Intel GPU inference: a 27B model fitted on one 32 GB Intel Arc Pro GPU under the unmodified Intel XPU build of vLLM, 1,798 tokens per second in total at 32 clients.",
+  "Experimental design for performance attribution: a four-arm experiment crossed over across two cards, attributing a +36% sustained throughput gain at 64 clients to what changed between arms.",
+  "Model publication and provenance: a model published on Hugging Face with per-module manifests, hash-replayed measurements and release validation of 433 files per checkpoint."
+ ],
+ "problem": "gpu-economics",
+ "canonical": "https://coreyjames.ai/stories/a-27b-model-on-one-32gb-intel-card/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/a-27b-model-on-one-32gb-intel-card"
+}

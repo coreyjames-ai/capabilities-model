@@ -1,0 +1,46 @@
+{
+ "url": "https://coreyjames.ai/systems/capabilities-model/",
+ "kind": "system",
+ "title": "Capabilities model",
+ "subtitle": "A 0.6-billion-parameter model that memorises an agent's tool catalog, with the data, decoder, serving and evaluation around it",
+ "systems": [],
+ "technologies": [
+  "PyTorch",
+  "Hugging Face Transformers",
+  "Full-parameter fine-tuning",
+  "Grammar-constrained decoding",
+  "CUDA",
+  "Rust",
+  "Model Context Protocol (MCP)",
+  "Weight quantisation (W4A16)",
+  "NVIDIA Blackwell GPUs"
+ ],
+ "stats": [
+  {
+   "value": "0.955",
+   "label": "recall at 5 on 469 frozen queries; the best classical baseline scored 0.949"
+  },
+  {
+   "value": "2,048",
+   "label": "simultaneous clients in one burst, none failed or rejected"
+  },
+  {
+   "value": "2.7 GiB",
+   "label": "for the whole discovery engine on the shared card"
+  }
+ ],
+ "lede": "An agent connected to a serious tool estate pays for that estate on every turn: the schema of every tool it might call is loaded into context whether it uses one or not. On my estate that was 44 tools across three servers, measured on the wire. The quieter failure is worse: an agent that cannot see the right tool concludes it has none and improvises. I replaced the catalog with a single discovery tool backed by a 0.6-billion-parameter model that has the catalog memorised and cannot name a tool outside it.",
+ "quote": "The baseline was weak. I struck it, built the strongest retriever I could assemble, and the model tied it.",
+ "evidence": [
+  "LLM fine-tuning for tool discovery: a 0.6-billion-parameter model fully fine-tuned on registry-generated data to memorise 44 tools across three servers, rebuilt in minutes when the catalog changes.",
+  "Grammar-constrained decoding: a grammar compiled from the tool registry and applied during decoding, so the model cannot name a tool outside the catalog.",
+  "Inference serving architecture: a batched, continuous CUDA decoding engine with paged key-value memory and typed refusals, 2.7 GiB on a card shared with a 30B model.",
+  "Deterministic GPU computation: output bits identical across batch compositions through one block per output row, fixed-order reductions and no K-split tiling.",
+  "ML evaluation methodology: recall at 5 of 0.955 on 469 frozen queries against 0.949 for the best classical baseline, published as a tie.",
+  "Load testing for agent concurrency: 2,048 simultaneous clients in one burst, none failed or rejected."
+ ],
+ "canonical": "https://coreyjames.ai/systems/capabilities-model/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/capabilities-model"
+}
