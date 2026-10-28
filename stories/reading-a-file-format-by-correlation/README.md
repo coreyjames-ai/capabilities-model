@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/reading-a-file-format-by-correlation/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735124 (this page is a chapter of the system's report)  
 Systems: [Capabilities model](https://github.com/coreyjames-ai/capabilities-model)  
 Technologies: [CUDA C++](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/cuda-c-plus-plus) · [Determinism and numerical reproducibility](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/determinism-and-numerical-reproducibility) · [ML evaluation methodology](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/ml-evaluation-methodology) · [Model quantization](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/model-quantization)  
 Skills: [LLM quantization (FP8, INT8, 4-bit)](https://github.com/coreyjames-ai/portfolio/tree/main/skills/llm-quantization-fp8-int8-4-bit) · [CUDA kernel development](https://github.com/coreyjames-ai/portfolio/tree/main/skills/cuda-kernel-development) · [AI-assisted engineering methodology](https://github.com/coreyjames-ai/portfolio/tree/main/skills/ai-assisted-engineering-methodology) · [GPU inference optimisation](https://github.com/coreyjames-ai/portfolio/tree/main/skills/gpu-inference-optimisation)  
@@ -71,7 +72,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "Reading a file format by correlation." coreyjames.ai, 2026. https://coreyjames.ai/stories/reading-a-file-format-by-correlation/
+Corey James. "Reading a file format by correlation." coreyjames.ai, 2026. https://coreyjames.ai/stories/reading-a-file-format-by-correlation/ In: the Capabilities model technical report, doi:10.5281/zenodo.23735124.
 
 ```bibtex
 @misc{coreyjames-reading-a-file-format-by-correlation,
@@ -79,7 +80,8 @@ Corey James. "Reading a file format by correlation." coreyjames.ai, 2026. https:
   title = {Reading a file format by correlation},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/reading-a-file-format-by-correlation/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/reading-a-file-format-by-correlation}
+  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/reading-a-file-format-by-correlation},
+  doi = {10.5281/zenodo.23735124}
 }
 ```
 

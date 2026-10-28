@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/every-request-accounted-for/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735124 (this page is a chapter of the system's report)  
 Systems: [Capabilities model](https://github.com/coreyjames-ai/capabilities-model)  
 Technologies: [CUDA C++](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/cuda-c-plus-plus) · [Capacity engineering, backpressure and load testing](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/capacity-engineering-backpressure-and-load-testing) · [Model Context Protocol (MCP)](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/model-context-protocol-mcp) · [Rust](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/rust) · [Unix domain sockets](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/unix-domain-sockets)  
 Skills: [inference serving architecture](https://github.com/coreyjames-ai/portfolio/tree/main/skills/inference-serving-architecture) · [MCP server design](https://github.com/coreyjames-ai/portfolio/tree/main/skills/mcp-server-design) · [distributed systems correctness](https://github.com/coreyjames-ai/portfolio/tree/main/skills/distributed-systems-correctness) · [high-throughput batch inference](https://github.com/coreyjames-ai/portfolio/tree/main/skills/high-throughput-batch-inference)  
@@ -68,7 +69,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "Every request accounted for." coreyjames.ai, 2026. https://coreyjames.ai/stories/every-request-accounted-for/
+Corey James. "Every request accounted for." coreyjames.ai, 2026. https://coreyjames.ai/stories/every-request-accounted-for/ In: the Capabilities model technical report, doi:10.5281/zenodo.23735124.
 
 ```bibtex
 @misc{coreyjames-every-request-accounted-for,
@@ -76,7 +77,8 @@ Corey James. "Every request accounted for." coreyjames.ai, 2026. https://coreyja
   title = {Every request accounted for},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/every-request-accounted-for/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/every-request-accounted-for}
+  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/every-request-accounted-for},
+  doi = {10.5281/zenodo.23735124}
 }
 ```
 

@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/a-router-beside-a-production-model/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735124 (this page is a chapter of the system's report)  
 Systems: [Capabilities model](https://github.com/coreyjames-ai/capabilities-model)  
 Technologies: [Admission control and rate limiting](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/admission-control-and-rate-limiting) · [Binary wire protocol design](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/binary-wire-protocol-design) · [CUDA C++](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/cuda-c-plus-plus) · [Capacity engineering, backpressure and load testing](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/capacity-engineering-backpressure-and-load-testing) · [GPU admission control and co-residency](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/gpu-admission-control-and-co-residency) · [GPU inference engine engineering](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/gpu-inference-engine-engineering) · [KV-cache engineering](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/kv-cache-engineering) · [ML evaluation methodology](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/ml-evaluation-methodology) · [Model Context Protocol (MCP)](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/model-context-protocol-mcp) · [Model families and types](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/model-families-and-types) · [NVIDIA Blackwell GPUs](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/nvidia-blackwell-gpus) · [Performance engineering and benchmarking](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/performance-engineering-and-benchmarking) · [Rust](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/rust) · [Unix domain sockets](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/unix-domain-sockets)  
 Skills: [inference serving architecture](https://github.com/coreyjames-ai/portfolio/tree/main/skills/inference-serving-architecture) · [high-throughput batch inference](https://github.com/coreyjames-ai/portfolio/tree/main/skills/high-throughput-batch-inference) · [vLLM internals](https://github.com/coreyjames-ai/portfolio/tree/main/skills/vllm-internals) · [AI-assisted engineering methodology](https://github.com/coreyjames-ai/portfolio/tree/main/skills/ai-assisted-engineering-methodology)  
@@ -81,7 +82,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "A router beside a production model." coreyjames.ai, 2026. https://coreyjames.ai/stories/a-router-beside-a-production-model/
+Corey James. "A router beside a production model." coreyjames.ai, 2026. https://coreyjames.ai/stories/a-router-beside-a-production-model/ In: the Capabilities model technical report, doi:10.5281/zenodo.23735124.
 
 ```bibtex
 @misc{coreyjames-a-router-beside-a-production-model,
@@ -89,7 +90,8 @@ Corey James. "A router beside a production model." coreyjames.ai, 2026. https://
   title = {A router beside a production model},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/a-router-beside-a-production-model/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/a-router-beside-a-production-model}
+  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/a-router-beside-a-production-model},
+  doi = {10.5281/zenodo.23735124}
 }
 ```
 

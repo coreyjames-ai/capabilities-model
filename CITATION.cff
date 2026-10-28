@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: Cite this repository's report by its DOI.
+type: dataset
+title: "Capabilities model: A 0.6-billion-parameter model that memorises an agent's tool catalog, with the data, decoder, serving and evaluation around it"
+authors:
+  - given-names: Corey
+    family-names: James
+    orcid: https://orcid.org/0009-0008-7246-963X
+doi: 10.5281/zenodo.23735124
+date-released: 2026-10-28
+url: https://coreyjames.ai/systems/capabilities-model/
+repository-code: https://github.com/coreyjames-ai/capabilities-model
+license: CC-BY-4.0
+abstract: "A 0.6-billion-parameter model that memorises an agent's tool catalog, with the data, decoder, serving and evaluation around it"

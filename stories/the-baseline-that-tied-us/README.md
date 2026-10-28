@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/the-baseline-that-tied-us/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735124 (this page is a chapter of the system's report)  
 Systems: [Capabilities model](https://github.com/coreyjames-ai/capabilities-model)  
 Technologies: [Catalog versioning and drift detection](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/catalog-versioning-and-drift-detection) · [Governed AI-assisted software engineering](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/governed-ai-assisted-software-engineering) · [Hugging Face Transformers](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/hugging-face-transformers) · [Hybrid retrieval](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/hybrid-retrieval) · [LLM fine-tuning](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/llm-fine-tuning) · [ML evaluation methodology](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/ml-evaluation-methodology) · [Model families and types](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/model-families-and-types) · [ONNX Runtime](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/onnx-runtime) · [Rust](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/rust) · [Synthetic training-data generation](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/synthetic-training-data-generation) · [Text embedding models](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/text-embedding-models)  
 Skills: [AI-assisted engineering methodology](https://github.com/coreyjames-ai/portfolio/tree/main/skills/ai-assisted-engineering-methodology)  
@@ -95,7 +96,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "The baseline that tied us." coreyjames.ai, 2026. https://coreyjames.ai/stories/the-baseline-that-tied-us/
+Corey James. "The baseline that tied us." coreyjames.ai, 2026. https://coreyjames.ai/stories/the-baseline-that-tied-us/ In: the Capabilities model technical report, doi:10.5281/zenodo.23735124.
 
 ```bibtex
 @misc{coreyjames-the-baseline-that-tied-us,
@@ -103,7 +104,8 @@ Corey James. "The baseline that tied us." coreyjames.ai, 2026. https://coreyjame
   title = {The baseline that tied us},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/the-baseline-that-tied-us/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/the-baseline-that-tied-us}
+  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/the-baseline-that-tied-us},
+  doi = {10.5281/zenodo.23735124}
 }
 ```
 

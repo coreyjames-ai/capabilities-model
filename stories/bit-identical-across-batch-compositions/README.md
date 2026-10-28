@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/bit-identical-across-batch-compositions/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735124 (this page is a chapter of the system's report)  
 Systems: [Capabilities model](https://github.com/coreyjames-ai/capabilities-model)  
 Technologies: [CUDA C++](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/cuda-c-plus-plus) · [Determinism and numerical reproducibility](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/determinism-and-numerical-reproducibility) · [GPU inference engine engineering](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/gpu-inference-engine-engineering) · [GPU numerical kernel design](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/gpu-numerical-kernel-design) · [Model families and types](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/model-families-and-types) · [Rust](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/rust)  
 Skills: [CUDA kernel development](https://github.com/coreyjames-ai/portfolio/tree/main/skills/cuda-kernel-development) · [GPU inference optimisation](https://github.com/coreyjames-ai/portfolio/tree/main/skills/gpu-inference-optimisation) · [inference serving architecture](https://github.com/coreyjames-ai/portfolio/tree/main/skills/inference-serving-architecture) · [AI-assisted engineering methodology](https://github.com/coreyjames-ai/portfolio/tree/main/skills/ai-assisted-engineering-methodology)  
@@ -86,7 +87,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "Bit-identical across batch compositions." coreyjames.ai, 2026. https://coreyjames.ai/stories/bit-identical-across-batch-compositions/
+Corey James. "Bit-identical across batch compositions." coreyjames.ai, 2026. https://coreyjames.ai/stories/bit-identical-across-batch-compositions/ In: the Capabilities model technical report, doi:10.5281/zenodo.23735124.
 
 ```bibtex
 @misc{coreyjames-bit-identical-across-batch-compositions,
@@ -94,7 +95,8 @@ Corey James. "Bit-identical across batch compositions." coreyjames.ai, 2026. htt
   title = {Bit-identical across batch compositions},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/bit-identical-across-batch-compositions/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/bit-identical-across-batch-compositions}
+  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/bit-identical-across-batch-compositions},
+  doi = {10.5281/zenodo.23735124}
 }
 ```
 

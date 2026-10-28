@@ -42,5 +42,8 @@
  "canonical": "https://coreyjames.ai/stories/a-27b-model-on-one-32gb-intel-card/",
  "datePublished": "2026-10-28",
  "author": "Corey James",
- "github": "https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/a-27b-model-on-one-32gb-intel-card"
+ "github": "https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/a-27b-model-on-one-32gb-intel-card",
+ "doi": "10.5281/zenodo.23735124",
+ "doi_relation": "part-of",
+ "author_orcid": "https://orcid.org/0009-0008-7246-963X"
 }

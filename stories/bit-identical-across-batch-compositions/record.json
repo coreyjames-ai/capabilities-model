@@ -38,5 +38,8 @@
  "canonical": "https://coreyjames.ai/stories/bit-identical-across-batch-compositions/",
  "datePublished": "2026-10-28",
  "author": "Corey James",
- "github": "https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/bit-identical-across-batch-compositions"
+ "github": "https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/bit-identical-across-batch-compositions",
+ "doi": "10.5281/zenodo.23735124",
+ "doi_relation": "part-of",
+ "author_orcid": "https://orcid.org/0009-0008-7246-963X"
 }

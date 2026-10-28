@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/the-recovery-that-drained-the-card/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735124 (this page is a chapter of the system's report)  
 Systems: [Capabilities model](https://github.com/coreyjames-ai/capabilities-model)  
 Technologies: [CUDA C++](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/cuda-c-plus-plus) · [CUDA Driver API](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/cuda-driver-api) · [GPU admission control and co-residency](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/gpu-admission-control-and-co-residency) · [GPU memory management](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/gpu-memory-management) · [Rust](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/rust)  
 Skills: [TensorRT and TensorRT-LLM engineering](https://github.com/coreyjames-ai/portfolio/tree/main/skills/tensorrt-and-tensorrt-llm-engineering) · [distributed systems correctness](https://github.com/coreyjames-ai/portfolio/tree/main/skills/distributed-systems-correctness) · [vLLM internals](https://github.com/coreyjames-ai/portfolio/tree/main/skills/vllm-internals) · [inference serving architecture](https://github.com/coreyjames-ai/portfolio/tree/main/skills/inference-serving-architecture)  
@@ -65,7 +66,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "The recovery that drained the card." coreyjames.ai, 2026. https://coreyjames.ai/stories/the-recovery-that-drained-the-card/
+Corey James. "The recovery that drained the card." coreyjames.ai, 2026. https://coreyjames.ai/stories/the-recovery-that-drained-the-card/ In: the Capabilities model technical report, doi:10.5281/zenodo.23735124.
 
 ```bibtex
 @misc{coreyjames-the-recovery-that-drained-the-card,
@@ -73,7 +74,8 @@ Corey James. "The recovery that drained the card." coreyjames.ai, 2026. https://
   title = {The recovery that drained the card},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/the-recovery-that-drained-the-card/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/the-recovery-that-drained-the-card}
+  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/the-recovery-that-drained-the-card},
+  doi = {10.5281/zenodo.23735124}
 }
 ```
 

@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/constraint-made-cheaper-than-no-constraint/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735124 (this page is a chapter of the system's report)  
 Systems: [Capabilities model](https://github.com/coreyjames-ai/capabilities-model)  
 Technologies: [CUDA C++](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/cuda-c-plus-plus) · [Determinism and numerical reproducibility](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/determinism-and-numerical-reproducibility) · [GPU inference engine engineering](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/gpu-inference-engine-engineering) · [Grammar-constrained decoding](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/grammar-constrained-decoding) · [NVIDIA Blackwell GPUs](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/nvidia-blackwell-gpus) · [Rust](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/rust)  
 Skills: [GPU inference optimisation](https://github.com/coreyjames-ai/portfolio/tree/main/skills/gpu-inference-optimisation) · [CUDA kernel development](https://github.com/coreyjames-ai/portfolio/tree/main/skills/cuda-kernel-development) · [AI-assisted engineering methodology](https://github.com/coreyjames-ai/portfolio/tree/main/skills/ai-assisted-engineering-methodology) · [cost attribution for AI work](https://github.com/coreyjames-ai/portfolio/tree/main/skills/cost-attribution-for-ai-work)  
@@ -90,7 +91,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "Constraint made cheaper than no constraint." coreyjames.ai, 2026. https://coreyjames.ai/stories/constraint-made-cheaper-than-no-constraint/
+Corey James. "Constraint made cheaper than no constraint." coreyjames.ai, 2026. https://coreyjames.ai/stories/constraint-made-cheaper-than-no-constraint/ In: the Capabilities model technical report, doi:10.5281/zenodo.23735124.
 
 ```bibtex
 @misc{coreyjames-constraint-made-cheaper-than-no-constraint,
@@ -98,7 +99,8 @@ Corey James. "Constraint made cheaper than no constraint." coreyjames.ai, 2026. 
   title = {Constraint made cheaper than no constraint},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/constraint-made-cheaper-than-no-constraint/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/constraint-made-cheaper-than-no-constraint}
+  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/constraint-made-cheaper-than-no-constraint},
+  doi = {10.5281/zenodo.23735124}
 }
 ```
 

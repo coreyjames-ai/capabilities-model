@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/a-27b-model-on-one-32gb-intel-card/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735124 (this page is a chapter of the system's report)  
 Systems: [Capabilities model](https://github.com/coreyjames-ai/capabilities-model) · [ActiveKV](https://github.com/coreyjames-ai/activekv)  
 Technologies: [Hugging Face Hub](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/hugging-face-hub) · [Intel Arc GPUs](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/intel-arc-gpus) · [ML evaluation methodology](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/ml-evaluation-methodology) · [Model families and types](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/model-families-and-types) · [Model quantization](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/model-quantization) · [PyTorch](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/pytorch) · [vLLM](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/vllm)  
 Skills: [GPU inference optimisation](https://github.com/coreyjames-ai/portfolio/tree/main/skills/gpu-inference-optimisation) · [LLM quantization (FP8, INT8, 4-bit)](https://github.com/coreyjames-ai/portfolio/tree/main/skills/llm-quantization-fp8-int8-4-bit) · [high-throughput batch inference](https://github.com/coreyjames-ai/portfolio/tree/main/skills/high-throughput-batch-inference) · [AI-assisted engineering methodology](https://github.com/coreyjames-ai/portfolio/tree/main/skills/ai-assisted-engineering-methodology)  
@@ -94,7 +95,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "A 27B model on one 32 GB Intel card." coreyjames.ai, 2026. https://coreyjames.ai/stories/a-27b-model-on-one-32gb-intel-card/
+Corey James. "A 27B model on one 32 GB Intel card." coreyjames.ai, 2026. https://coreyjames.ai/stories/a-27b-model-on-one-32gb-intel-card/ In: the Capabilities model technical report, doi:10.5281/zenodo.23735124.
 
 ```bibtex
 @misc{coreyjames-a-27b-model-on-one-32gb-intel-card,
@@ -102,7 +103,8 @@ Corey James. "A 27B model on one 32 GB Intel card." coreyjames.ai, 2026. https:/
   title = {A 27B model on one 32 GB Intel card},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/a-27b-model-on-one-32gb-intel-card/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/a-27b-model-on-one-32gb-intel-card}
+  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/a-27b-model-on-one-32gb-intel-card},
+  doi = {10.5281/zenodo.23735124}
 }
 ```
 

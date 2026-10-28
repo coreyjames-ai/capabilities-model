@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/prove-the-mechanism-before-the-model/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735124 (this page is a chapter of the system's report)  
 Systems: [Capabilities model](https://github.com/coreyjames-ai/capabilities-model)  
 Technologies: [CUDA C++](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/cuda-c-plus-plus) · [CUDA Driver API](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/cuda-driver-api) · [GPU numerical kernel design](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/gpu-numerical-kernel-design) · [Performance engineering and benchmarking](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/performance-engineering-and-benchmarking)  
 Skills: [GPU inference optimisation](https://github.com/coreyjames-ai/portfolio/tree/main/skills/gpu-inference-optimisation) · [CUDA kernel development](https://github.com/coreyjames-ai/portfolio/tree/main/skills/cuda-kernel-development) · [AI-assisted engineering methodology](https://github.com/coreyjames-ai/portfolio/tree/main/skills/ai-assisted-engineering-methodology) · [evidence-gated acceptance](https://github.com/coreyjames-ai/portfolio/tree/main/skills/evidence-gated-acceptance)  
@@ -73,7 +74,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "Prove the mechanism before the model." coreyjames.ai, 2026. https://coreyjames.ai/stories/prove-the-mechanism-before-the-model/
+Corey James. "Prove the mechanism before the model." coreyjames.ai, 2026. https://coreyjames.ai/stories/prove-the-mechanism-before-the-model/ In: the Capabilities model technical report, doi:10.5281/zenodo.23735124.
 
 ```bibtex
 @misc{coreyjames-prove-the-mechanism-before-the-model,
@@ -81,7 +82,8 @@ Corey James. "Prove the mechanism before the model." coreyjames.ai, 2026. https:
   title = {Prove the mechanism before the model},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/prove-the-mechanism-before-the-model/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/prove-the-mechanism-before-the-model}
+  note = {GitHub copy: https://github.com/coreyjames-ai/capabilities-model/tree/main/stories/prove-the-mechanism-before-the-model},
+  doi = {10.5281/zenodo.23735124}
 }
 ```
 
